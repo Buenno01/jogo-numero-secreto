@@ -15,6 +15,8 @@ function validacaoDoValor (chute){
         document.body.innerHTML = `
         <h2>Você acertou!</h2>
         <h3>O número secreto era ${numeroSecreto}</h3>
+
+        <button id="reset" class="btn-reset">Jogar novamente</button>
         `
     } 
     else if(numero>numeroSecreto){
@@ -31,4 +33,14 @@ function chuteForaDoIntervalo(numero) {
 
 function chuteForInvalido(numero) {
     return Number.isNaN(numero)
+}
+
+document.body.addEventListener('click', e=>{
+    if(e.target.id == 'reset'){
+        reset();
+    }
+})
+
+function reset(){
+    window.location.reload()
 }

@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;700&display=swap');
 
 :root{
     --font-family: 'Montserrat', sans-serif;
     --bg-color:#19376D;
     --primary-color: #A5D7E8;
+    --secondary-color: #576CBC;
 }
 
 body{
@@ -31,6 +32,31 @@ h2{
 
 h3{
     font-size: 2em;
+}
+
+.btn-reset{
+    position: absolute;
+    padding: 8px 15px;
+    border: 3px solid var(--primary-color);
+    background: var(--primary-color);
+    color: var(--bg-color);
+    top: 60%;
+    border-radius: 9999999999px;
+    font-weight: 700;
+}
+
+.btn-reset:hover{
+    border: 3px solid var(--primary-color);
+    background: var(--bg-color);
+    color: var(--primary-color);
+
+}
+
+.btn-reset:active{
+    border: 3px solid var(--primary-color);
+    background: var(--secondary-color);
+    color: var(--primary-color);
+
 }
 
 .mensagem {

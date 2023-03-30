@@ -12,6 +12,10 @@ function onSpeak(e){
     console.log(e);
     chute = e.results[0][0].transcript;
 
+    if(chute === "reset" ||chute === "resetar" ||chute === "jogar de novo" ||chute === "jogar novamente"){
+        reset();
+    }
+
     validacaoDoValor(chute)
 
     exibeChuteNaTela(chute)
